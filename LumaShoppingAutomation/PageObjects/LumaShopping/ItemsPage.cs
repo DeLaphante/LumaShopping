@@ -1,7 +1,6 @@
 ﻿using CynkyWrapper;
 using DemoAutomation.Models.UI;
 using OpenQA.Selenium;
-using System.Threading;
 
 namespace DemoAutomation.PageObjects.CommonPages
 {
@@ -21,7 +20,6 @@ namespace DemoAutomation.PageObjects.CommonPages
         PageElement ItemColor_button(string itemColor, int index) => new PageElement(_Driver, By.XPath($"(//div[contains(@class,'product details')]//div[contains(@option-label,'{itemColor}')])[{index}]"));
         PageElement AddToCart_button(string itemColor, int index) => new PageElement(_Driver, By.XPath($"(//div[contains(@class,'product details') and .//div[contains(@option-label,'{itemColor}')]]//button[@title='Add to Cart'])[{index}]"));
         PageElement CartItemsNumber_label => new PageElement(_Driver, By.XPath($"//span[@class='counter-label']"));
-
 
         #endregion
 

@@ -17,7 +17,6 @@ namespace DemoAutomation.PageObjects.CommonPages
         PageElement BillingAddress_label => new PageElement(_Driver, By.ClassName("billing-address-details"));
         PageElement ShipToAddress_label => new PageElement(_Driver, By.ClassName("shipping-information-content"));
 
-
         #endregion
 
         #region Actions

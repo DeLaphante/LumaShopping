@@ -18,7 +18,6 @@ namespace DemoAutomation.PageObjects.CommonPages
         PageElement Inputfields_textbox(string name) => new PageElement(_Driver, By.Name($"{name}"));
         PageElement Email_textbox => new PageElement(_Driver, By.XPath($"(//input[@id='customer-email'])[1]"));
 
-
         #endregion
 
         #region Actions

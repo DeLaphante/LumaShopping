@@ -18,7 +18,6 @@ namespace DemoAutomation.PageObjects.CommonPages
         PageElement Inputfields_textbox(string idName) => new PageElement(_Driver, By.Id($"{idName}"));
         PageElement Submit_button => new PageElement(_Driver, By.XPath($"//button[@title='Create an Account']"));
 
-
         #endregion
 
         #region Actions

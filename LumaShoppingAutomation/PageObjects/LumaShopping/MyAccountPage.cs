@@ -16,7 +16,6 @@ namespace DemoAutomation.PageObjects.CommonPages
 
         PageElement ContactInformation_label => new PageElement(_Driver, By.XPath($"//div[contains(@class,'box-information')]//p"));
 
-
         #endregion
 
         #region Actions
