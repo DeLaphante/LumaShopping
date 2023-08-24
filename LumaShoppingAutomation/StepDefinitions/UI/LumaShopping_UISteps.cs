@@ -43,7 +43,8 @@ namespace DemoAutomation.StepDefinitions.UI
         {
             var customer = _ScenarioContext.Get<Customer>("customer");
             _ItemsPage.AddItemToCart(customer);
-            StringGenerator.GetSanitizedAlphanumericString(_ItemsPage.GetNumberOfItemsInCart()).Should().Contain($"{_ItemsPage.GetTotalNumberOfItems(customer)}");
+            StringGenerator.GetSanitizedAlphanumericString(_ItemsPage.GetNumberOfItemsInCart())
+                .Should().Contain($"{_ItemsPage.GetTotalNumberOfItems(customer)}");
         }
 
         [StepDefinition(@"places the order")]
@@ -55,8 +56,14 @@ namespace DemoAutomation.StepDefinitions.UI
             var customer = _ScenarioContext.Get<Customer>("customer");
             _ShippingAddressPage.EnterShippingAddress(customer);
 
-            StringGenerator.GetSanitizedAlphanumericString(_ReviewAndPaymentsPage.GetBillingAddress().Replace("\r\n", string.Empty).Replace("Edit", string.Empty)).Should().Be($"{customer.FirstName}{customer.LastName}{customer.StreetAddress}{customer.City}{StringGenerator.GetSanitizedAlphanumericString(customer.Country)}{customer.PhoneNumber}");
-            StringGenerator.GetSanitizedAlphanumericString(_ReviewAndPaymentsPage.GetShipToAddress().Replace("\r\n", string.Empty).Replace("Edit", string.Empty)).Should().Be($"{customer.FirstName}{customer.LastName}{customer.StreetAddress}{customer.City}{StringGenerator.GetSanitizedAlphanumericString(customer.Country)}{customer.PhoneNumber}");
+            StringGenerator.GetSanitizedAlphanumericString(_ReviewAndPaymentsPage.
+                GetBillingAddress().Replace("\r\n", string.Empty).Replace("Edit", string.Empty))
+                .Should().Be($"{customer.FirstName}{customer.LastName}{customer.StreetAddress}{customer.City}{StringGenerator.GetSanitizedAlphanumericString(customer.Country)}{customer.PhoneNumber}");
+
+            StringGenerator.GetSanitizedAlphanumericString(_ReviewAndPaymentsPage.
+                GetShipToAddress().Replace("\r\n", string.Empty).Replace("Edit", string.Empty))
+                .Should().Be($"{customer.FirstName}{customer.LastName}{customer.StreetAddress}{customer.City}{StringGenerator.GetSanitizedAlphanumericString(customer.Country)}{customer.PhoneNumber}");
+
             _Navigation.ClickButton("Place Order");
         }
 
@@ -87,7 +94,8 @@ namespace DemoAutomation.StepDefinitions.UI
         public void ThenTheAccountShouldBeSuccessfullyCreated()
         {
             var customer = _ScenarioContext.Get<Customer>("customer");
-            _MyAccountPage.GetContactInformation().Replace("\r\n", string.Empty).Should().Be($"{customer.FirstName} {customer.LastName}{customer.Email}");
+            _MyAccountPage.GetContactInformation().Replace("\r\n", string.Empty)
+                .Should().Be($"{customer.FirstName} {customer.LastName}{customer.Email}");
         }
 
 
