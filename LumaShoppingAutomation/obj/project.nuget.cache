@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z7SfBJS02xbEvXURtEn4VUcF70M7MeJJPRUdv9BKUwr8+VQRknHlS44Oq1W625QxsFSRc1rU30tEYZV7ZnJjzA==",
+  "dgSpecHash": "lCr4rIcXQM/v2Ib0tLGB4th+hAfGD0UVLD4tks8QX3uUhW7t0Jj7JXbK/PxyJcMS+NH1o6ozaazMAc9Atw+l1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Personal\\source\\repos\\LumaShoppingAutomation\\LumaShoppingAutomation\\LumaShoppingAutomation.csproj",
+  "projectFilePath": "C:\\Users\\Personal\\Source\\Repos\\LumaShopping\\LumaShoppingAutomation\\LumaShoppingAutomation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Personal\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\Personal\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",

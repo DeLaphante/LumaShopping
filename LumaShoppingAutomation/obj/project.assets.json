@@ -7241,17 +7241,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Personal\\source\\repos\\LumaShoppingAutomation\\LumaShoppingAutomation\\LumaShoppingAutomation.csproj",
+      "projectUniqueName": "C:\\Users\\Personal\\Source\\Repos\\LumaShopping\\LumaShoppingAutomation\\LumaShoppingAutomation.csproj",
       "projectName": "LumaShoppingAutomation",
-      "projectPath": "C:\\Users\\Personal\\source\\repos\\LumaShoppingAutomation\\LumaShoppingAutomation\\LumaShoppingAutomation.csproj",
+      "projectPath": "C:\\Users\\Personal\\Source\\Repos\\LumaShopping\\LumaShoppingAutomation\\LumaShoppingAutomation.csproj",
       "packagesPath": "C:\\Users\\Personal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Personal\\source\\repos\\LumaShoppingAutomation\\LumaShoppingAutomation\\obj\\",
+      "outputPath": "C:\\Users\\Personal\\Source\\Repos\\LumaShopping\\LumaShoppingAutomation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Personal\\source\\repos\\LumaShoppingAutomation\\NuGet.Config",
+        "C:\\Users\\Personal\\Source\\Repos\\LumaShopping\\NuGet.Config",
         "C:\\Users\\Personal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
