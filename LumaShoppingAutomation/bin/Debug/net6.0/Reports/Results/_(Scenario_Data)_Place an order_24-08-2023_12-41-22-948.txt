@@ -1,1 +1,0 @@
-[customer, {"FirstName":"NEqdxlmiMF","LastName":"QhNNYuHCQa","Email":"JsAeNHcgUP40@mailinator.com","Password":"xxhKWbZvSH@1","StreetAddress":"EsUlEMcjTN","City":"London","Country":"United Kingdom","PhoneNumber":"07747353179","ShoppingGender":"Men","ItemsColor":["Black","Yellow"],"ItemsSize":"M"}]
