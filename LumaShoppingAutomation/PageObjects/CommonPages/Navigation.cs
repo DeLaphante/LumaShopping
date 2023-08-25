@@ -55,7 +55,8 @@ namespace DemoAutomation.PageObjects.CommonPages
             switch (option.ToLower())
             {
                 case "tops":
-                    NavBarMenuArrow_label.IsDisplayed();
+                    if (!NavBarMenuArrow_label.IsDisplayed())
+                        throw new Exception("Dropdown arrow not displayed!");
                     NavBarMenu_link(customer.ShoppingGender).MoveToElement();
                     SubMenuOption_link(customer.ShoppingGender, "Tops").Click();
                     break;
