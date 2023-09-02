@@ -1,4 +1,3 @@
-using BoDi;
 using CynkyUtilities;
 using DemoAutomation.Models.UI;
 using DemoAutomation.PageObjects.CommonPages;
@@ -18,15 +17,15 @@ namespace DemoAutomation.StepDefinitions.UI
         CreateNewCustomerAccountPage _CreateNewCustomerAccountPage;
         ScenarioContext _ScenarioContext;
 
-        public LumaShopping_UISteps(IObjectContainer objectContainer)
+        public LumaShopping_UISteps(ScenarioContext scenarioContext)
         {
-            _Navigation = objectContainer.Resolve<Navigation>();
-            _ItemsPage = objectContainer.Resolve<ItemsPage>();
-            _ShippingAddressPage = objectContainer.Resolve<ShippingAddressPage>();
-            _ReviewAndPaymentsPage = objectContainer.Resolve<ReviewAndPaymentsPage>();
-            _MyAccountPage = objectContainer.Resolve<MyAccountPage>();
-            _CreateNewCustomerAccountPage = objectContainer.Resolve<CreateNewCustomerAccountPage>();
-            _ScenarioContext = objectContainer.Resolve<ScenarioContext>();
+            _Navigation = scenarioContext.ScenarioContainer.Resolve<Navigation>();
+            _ItemsPage = scenarioContext.ScenarioContainer.Resolve<ItemsPage>();
+            _ShippingAddressPage = scenarioContext.ScenarioContainer.Resolve<ShippingAddressPage>();
+            _ReviewAndPaymentsPage = scenarioContext.ScenarioContainer.Resolve<ReviewAndPaymentsPage>();
+            _MyAccountPage = scenarioContext.ScenarioContainer.Resolve<MyAccountPage>();
+            _CreateNewCustomerAccountPage = scenarioContext.ScenarioContainer.Resolve<CreateNewCustomerAccountPage>();
+            _ScenarioContext = scenarioContext.ScenarioContainer.Resolve<ScenarioContext>();
         }
 
 
