@@ -1,10 +1,10 @@
 ﻿using CynkyWrapper;
 using CynkyWrapper.Configuration;
-using DemoAutomation.Models.UI;
+using LumaShoppingAutomation.Models.UI;
 using OpenQA.Selenium;
 using System;
 
-namespace DemoAutomation.PageObjects.CommonPages
+namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
     public class Navigation
     {

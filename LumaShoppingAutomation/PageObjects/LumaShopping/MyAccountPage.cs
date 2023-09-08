@@ -1,7 +1,7 @@
 ﻿using CynkyWrapper;
 using OpenQA.Selenium;
 
-namespace DemoAutomation.PageObjects.CommonPages
+namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
     public class MyAccountPage
     {

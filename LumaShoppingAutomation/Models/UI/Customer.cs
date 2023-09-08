@@ -1,7 +1,7 @@
 ﻿using CynkyUtilities;
 using System.Collections.Generic;
 
-namespace DemoAutomation.Models.UI
+namespace LumaShoppingAutomation.Models.UI
 {
     public class Customer
     {

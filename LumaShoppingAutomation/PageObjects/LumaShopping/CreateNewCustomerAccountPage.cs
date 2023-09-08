@@ -1,8 +1,8 @@
 ﻿using CynkyWrapper;
-using DemoAutomation.Models.UI;
+using LumaShoppingAutomation.Models.UI;
 using OpenQA.Selenium;
 
-namespace DemoAutomation.PageObjects.CommonPages
+namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
     public class CreateNewCustomerAccountPage
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System;
 
-namespace DemoAutomation.Configuration
+namespace LumaShoppingAutomation.Configuration
 {
     public class ConfigManager
     {

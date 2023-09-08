@@ -1,10 +1,10 @@
 using CynkyUtilities;
-using DemoAutomation.Models.UI;
-using DemoAutomation.PageObjects.CommonPages;
+using LumaShoppingAutomation.Models.UI;
+using LumaShoppingAutomation.PageObjects.CommonPages;
 using FluentAssertions;
 using TechTalk.SpecFlow;
 
-namespace DemoAutomation.StepDefinitions.UI
+namespace LumaShoppingAutomation.StepDefinitions.UI
 {
     [Binding]
     public class LumaShopping_UISteps

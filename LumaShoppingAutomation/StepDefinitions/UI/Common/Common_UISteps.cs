@@ -1,7 +1,7 @@
-﻿using DemoAutomation.PageObjects.CommonPages;
+﻿using LumaShoppingAutomation.PageObjects.CommonPages;
 using TechTalk.SpecFlow;
 
-namespace DemoAutomation.StepDefinitions.UI.Common
+namespace LumaShoppingAutomation.StepDefinitions.UI.Common
 {
     [Binding]
     public sealed class Common_UISteps
