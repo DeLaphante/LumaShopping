@@ -1,7 +1,7 @@
 using CynkyUtilities;
+using FluentAssertions;
 using LumaShoppingAutomation.Models.UI;
 using LumaShoppingAutomation.PageObjects.CommonPages;
-using FluentAssertions;
 using TechTalk.SpecFlow;
 
 namespace LumaShoppingAutomation.StepDefinitions.UI
