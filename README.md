@@ -9,6 +9,8 @@ Demonstration of automating LumaShopping scenarios powered by [CynkyAutomation](
 
 - No Thread.Sleeps or implicit waits
 
+- No StaleElementReferenceException
+
 - No test retries 
 
 - Different challenges and hurdles
