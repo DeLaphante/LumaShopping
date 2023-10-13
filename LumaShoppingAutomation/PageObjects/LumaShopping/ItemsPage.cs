@@ -40,7 +40,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
                     AddToCart_button(item, counter).Click();
                     Header_label.Click();
                     if (!SuccessfulCartAddition_label.IsDisplayed())
-                        throw new Exception("Item was not added successfuly to acrt!");
+                        throw new Exception("Item was not added successfully to cart!");
                     counter++;
                 } while (counter <= numberOfItems);
             }
