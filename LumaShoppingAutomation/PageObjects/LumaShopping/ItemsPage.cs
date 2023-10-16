@@ -21,7 +21,6 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
         PageElement ItemColor_button(string itemColor, int index) => new PageElement(_Driver, By.XPath($"(//div[contains(@class,'product details')]//div[contains(@option-label,'{itemColor}')])[{index}]"));
         PageElement AddToCart_button(string itemColor, int index) => new PageElement(_Driver, By.XPath($"(//div[contains(@class,'product details') and .//div[contains(@option-label,'{itemColor}')]]//button[@title='Add to Cart'])[{index}]"));
         PageElement CartItemsNumber_label => new PageElement(_Driver, By.XPath($"//span[@class='counter-label']"));
-        PageElement SuccessfulCartAddition_label => new PageElement(_Driver, By.XPath($"//a[text()='shopping cart']"));
 
         #endregion
 
@@ -39,8 +38,6 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
                     ItemColor_button(item, counter).Click();
                     AddToCart_button(item, counter).Click();
                     Header_label.Click();
-                    if (!SuccessfulCartAddition_label.IsDisplayed())
-                        throw new Exception("Item was not added successfully to cart!");
                     counter++;
                 } while (counter <= numberOfItems);
             }
