@@ -2,6 +2,7 @@
 using LumaShoppingAutomation.Models.UI;
 using OpenQA.Selenium;
 using System;
+using System.Linq;
 
 namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
@@ -30,13 +31,15 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
         {
             foreach (var item in customer.ItemsColor)
             {
-                int numberOfItems = Items_label(item).GetAllElements().Count;
-                for(int counter = 1; counter <= numberOfItems; counter++)
+                if (!Items_label(item).IsDisplayed())
+                    throw new Exception("Dropdown arrow not displayed!");
+
+                for (int counter = 1; counter <= Items_label(item).GetAllElements().Count; counter++)
                 {
                     ItemSize_button(item, customer.ItemsSize, counter).Click();
                     ItemColor_button(item, counter).Click();
                     AddToCart_button(item, counter).Click();
-                } 
+                }
             }
         }
 
