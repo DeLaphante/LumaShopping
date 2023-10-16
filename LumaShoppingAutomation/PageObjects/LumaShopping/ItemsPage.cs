@@ -31,15 +31,12 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
             foreach (var item in customer.ItemsColor)
             {
                 int numberOfItems = Items_label(item).GetAllElements().Count;
-                int counter = 1;
-                do
+                for(int counter = 1; counter <= numberOfItems; counter++)
                 {
                     ItemSize_button(item, customer.ItemsSize, counter).Click();
                     ItemColor_button(item, counter).Click();
                     AddToCart_button(item, counter).Click();
-                    Header_label.Click();
-                    counter++;
-                } while (counter <= numberOfItems);
+                } 
             }
         }
 
