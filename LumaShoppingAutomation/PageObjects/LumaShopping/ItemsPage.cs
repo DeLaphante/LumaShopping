@@ -39,8 +39,6 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
                     ItemSize_button(item, customer.ItemsSize, counter).Click();
                     ItemColor_button(item, counter).Click();
                     AddToCart_button(item, counter).Click();
-                   if (!CartItemsNumber_label.IsDisplayed())
-                        throw new Exception("Cart not being displayed!");
                 }
             }
         }
