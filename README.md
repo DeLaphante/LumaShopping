@@ -1,5 +1,5 @@
 # LumaShopping
-Demonstration of automating LumaShopping scenarios powered by [CynkyAutomation](https://github.com/DeLaphante/CynkyAutomation)
+Demonstration of automating LumaShopping UI scenarios powered by [CynkyAutomation](https://github.com/DeLaphante/CynkyAutomation)
 
 - Same C# Framework (CynkyAutomation)
 
