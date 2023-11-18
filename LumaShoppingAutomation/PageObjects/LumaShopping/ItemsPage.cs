@@ -2,7 +2,6 @@
 using LumaShoppingAutomation.Models.UI;
 using OpenQA.Selenium;
 using System;
-using System.Linq;
 
 namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
@@ -45,6 +44,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
 
         public string GetNumberOfItemsInCart()
         {
+            CartItemsNumber_label.MoveToElement();
             return CartItemsNumber_label.GetText();
         }
 
