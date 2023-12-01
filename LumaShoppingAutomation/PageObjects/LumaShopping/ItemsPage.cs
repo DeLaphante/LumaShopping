@@ -35,9 +35,12 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
 
                 for (int counter = 1; counter <= Items_label(item).GetAllElements().Count; counter++)
                 {
-                    ItemSize_button(item, customer.ItemsSize, counter).Click();
-                    ItemColor_button(item, counter).Click();
-                    AddToCart_button(item, counter).Click();
+                    if (!ItemSize_button(item, customer.ItemsSize, counter).GetAttribute("class").Contains("selected"))
+                        ItemSize_button(item, customer.ItemsSize, counter).Click();
+                    if (!ItemColor_button(item, counter).GetAttribute("class").Contains("selected"))
+                        ItemColor_button(item, counter).Click();
+                    if (!AddToCart_button(item, counter).GetAttribute("class").Contains("selected"))
+                        AddToCart_button(item, counter).Click();
                 }
             }
         }
