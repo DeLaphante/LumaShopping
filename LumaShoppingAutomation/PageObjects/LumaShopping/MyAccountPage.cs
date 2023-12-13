@@ -1,4 +1,4 @@
-﻿using CynkyWrapper;
+﻿using CynkyDriver;
 using OpenQA.Selenium;
 
 namespace LumaShoppingAutomation.PageObjects.CommonPages

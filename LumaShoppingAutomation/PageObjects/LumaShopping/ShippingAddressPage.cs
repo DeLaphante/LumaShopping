@@ -1,4 +1,4 @@
-﻿using CynkyWrapper;
+﻿using CynkyDriver;
 using LumaShoppingAutomation.Models.UI;
 using OpenQA.Selenium;
 
