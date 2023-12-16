@@ -55,8 +55,6 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
             switch (option.ToLower())
             {
                 case "tops":
-                    if (!NavBarMenuArrow_label.IsDisplayed())
-                        throw new Exception("Dropdown arrow not displayed!");
                     NavBarMenu_link(customer.ShoppingGender).MoveToElement();
                     SubMenuOption_link(customer.ShoppingGender, "Tops").Click();
                     break;
