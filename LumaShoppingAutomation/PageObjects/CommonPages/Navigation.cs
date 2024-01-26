@@ -32,7 +32,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
 
         public void NavigateToHomePage()
         {
-            _Driver.Navigate().GoToUrl(CynkyConfigManager.SiteUrl);
+            _Driver.Navigate().GoToUrl(CynkyConfigManager.BaseSiteUrl);
         }
 
         public string GetPageHeader()
