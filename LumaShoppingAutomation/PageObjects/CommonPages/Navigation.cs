@@ -17,7 +17,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
 
         #region Locators
 
-        PageElement Button(string text, int index) => new PageElement(_Driver, By.XPath($"(//button[contains(.,'{text}')])[{index}]"));
+        PageElement Button(string text, int index = 1) => new PageElement(_Driver, By.XPath($"(//button[contains(.,'{text}')])[{index}]"));
         protected PageElement Header_label => new PageElement(_Driver, By.TagName("h1"));
         PageElement MyCart_link => new PageElement(_Driver, By.XPath("//a[contains(.,'My Cart')]"));
         PageElement TopBar_link(string option) => new PageElement(_Driver, By.XPath($"(//a[normalize-space(text()) = '{option}'])[1]"));
@@ -33,6 +33,12 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
         public void NavigateToHomePage()
         {
             _Driver.Navigate().GoToUrl(CynkyConfigManager.BaseSiteUrl);
+            AcceptCookie();
+        }
+        public void AcceptCookie()
+        {
+            if (Button("Consent").IsDisplayed())
+                Button("Consent").Click();
         }
 
         public string GetPageHeader()
