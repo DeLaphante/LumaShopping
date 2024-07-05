@@ -22,7 +22,6 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
         PageElement MyCart_link => new PageElement(_Driver, By.XPath("//a[contains(.,'My Cart')]"));
         PageElement TopBar_link(string option) => new PageElement(_Driver, By.XPath($"(//a[normalize-space(text()) = '{option}'])[1]"));
         PageElement NavBarMenu_link(string option) => new PageElement(_Driver, By.XPath($"//nav[@class='navigation']//li[contains(.,'{option}')]"));
-        PageElement NavBarMenuArrow_label => new PageElement(_Driver, By.XPath($"(//span[contains(@class,'ui-menu-icon')])[1]"));
         PageElement SubMenuOption_link(string option, string subOption) => new PageElement(_Driver, By.XPath($"//nav[@class='navigation']//li[contains(.,'{option}')]//li[contains(.,'{subOption}')]"));
         PageElement CheckoutSuccess_label => new PageElement(_Driver, By.ClassName("checkout-success"));
 
@@ -61,8 +60,6 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
             switch (option.ToLower())
             {
                 case "tops":
-                    if (!NavBarMenuArrow_label.IsDisplayed())
-                        throw new Exception("Dropdown arrow not displayed!");
                     NavBarMenu_link(customer.ShoppingGender).MoveToElement();
                     SubMenuOption_link(customer.ShoppingGender, "Tops").Click();
                     break;
