@@ -8,7 +8,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
     public class Navigation
     {
-        IWebDriver _Driver;
+        protected IWebDriver _Driver;
 
         public Navigation(IWebDriver driver)
         {

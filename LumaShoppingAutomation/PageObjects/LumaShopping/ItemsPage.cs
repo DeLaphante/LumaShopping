@@ -7,12 +7,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
     public class ItemsPage : Navigation
     {
-        IWebDriver _Driver;
-
-        public ItemsPage(IWebDriver driver) : base(driver)
-        {
-            _Driver = driver;
-        }
+        public ItemsPage(IWebDriver driver) : base(driver) { }
 
         #region Locators
 

@@ -5,12 +5,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
     public class ReviewAndPaymentsPage : Navigation
     {
-        IWebDriver _Driver;
-
-        public ReviewAndPaymentsPage(IWebDriver driver) : base(driver)
-        {
-            _Driver = driver;
-        }
+        public ReviewAndPaymentsPage(IWebDriver driver) : base(driver) { }
 
         #region Locators
 

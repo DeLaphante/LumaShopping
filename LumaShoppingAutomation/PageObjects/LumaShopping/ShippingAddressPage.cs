@@ -6,12 +6,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
     public class ShippingAddressPage : Navigation
     {
-        IWebDriver _Driver;
-
-        public ShippingAddressPage(IWebDriver driver) : base(driver)
-        {
-            _Driver = driver;
-        }
+        public ShippingAddressPage(IWebDriver driver) : base(driver) { }
 
         #region Locators
 
