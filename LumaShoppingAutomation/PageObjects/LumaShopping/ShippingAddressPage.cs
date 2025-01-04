@@ -27,7 +27,8 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
             Inputfields_textbox("city").SendKeys(customer.City);
             Inputfields_textbox("telephone").SendKeys(customer.PhoneNumber);
             Inputfields_textbox("country_id").SelectByText(customer.Country);
-            ShippingMethods_radio(15).Click();
+            if (ShippingMethods_radio(15).IsDisplayed())
+                ShippingMethods_radio(15).Click();
             ClickButton("Next");
         }
 
