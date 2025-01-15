@@ -1,5 +1,5 @@
 ﻿using LumaShoppingAutomation.PageObjects.CommonPages;
-using TechTalk.SpecFlow;
+using Reqnroll;
 
 namespace LumaShoppingAutomation.StepDefinitions.UI.Common
 {
