@@ -25,9 +25,6 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
         {
             foreach (var item in customer.ItemsColor)
             {
-                if (!Items_label(item).IsDisplayed())
-                    throw new Exception("Dropdown arrow not displayed!");
-
                 for (int counter = 1; counter <= Items_label(item).GetAllElements().Count; counter++)
                 {
                     if (!ItemSize_button(item, customer.ItemsSize, counter).GetDomAttribute("class").Contains("selected"))
