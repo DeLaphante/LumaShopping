@@ -1,7 +1,6 @@
 ﻿using CynkyDriver;
 using LumaShoppingAutomation.Models.UI;
 using OpenQA.Selenium;
-using System;
 
 namespace LumaShoppingAutomation.PageObjects.CommonPages
 {
