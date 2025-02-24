@@ -26,7 +26,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
             Inputfields_textbox("email_address").SendKeys(customer.Email);
             Inputfields_textbox("password").SendKeys(customer.Password);
             Inputfields_textbox("password-confirmation").SendKeys(customer.Password);
-            Button("Create an Account").Click();
+            Button("Create an Account", 3).Click();
         }
 
         #endregion
