@@ -17,7 +17,7 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
 
         #region Locators
 
-        protected PageElement Button(string text, int index = 1) => new PageElement(_Driver, By.XPath($"(//*[(self::button or self::a or self::input or @onclick or @role='button')  and (contains(translate(normalize-space(string(.)),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),\"{text.ToLower()}\") or contains(@class,\"{text}\") or contains(@title,\"{text}\") or contains(@value,\"{text}\")) and not(contains(@class,'disable') or @disabled)])[{index}]"));
+        protected PageElement Button(string text, int index = 1) => new PageElement(_Driver, By.XPath($"(//*[(self::button or self::a or self::input or @onclick or @role='button')  and (translate(normalize-space(string(.)),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = \"{text.ToLower()}\" or contains(@class,\"{text}\") or contains(@title,\"{text}\") or contains(@value,\"{text}\")) and not(contains(@class,'disable') or @disabled)])[{index}]"));
         protected PageElement Header_label => new PageElement(_Driver, By.TagName("h1"));
         PageElement MyCart_link => new PageElement(_Driver, By.XPath("//a[contains(.,'My Cart')]"));
         PageElement TopBar_link(string option) => new PageElement(_Driver, By.XPath($"(//a[normalize-space(text()) = '{option}'])[1]"));
