@@ -36,8 +36,8 @@ namespace LumaShoppingAutomation.PageObjects.CommonPages
         }
         public void AcceptCookie()
         {
-            if (Button("DISAGREE").IsDisplayed())
-                Button("DISAGREE").Click();
+            if (Button("Consent").IsDisplayed())
+                Button("Consent").Click();
         }
 
         public string GetPageHeader()
